@@ -1,0 +1,88 @@
+@import "../layout/content-header";
+@import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    @include border-box;
+}
+
+.container{
+	width: 95%;
+    max-width: $grid-max-width; 
+    margin:0 auto;
+    #home-page{
+    	display: flex;
+  		flex-wrap: wrap;
+    	article{
+    		@media screen and (max-width: 37.5em) {
+				width:100%;
+				padding-left:0px;
+	    		padding-right:0px;
+	    		margin-bottom:10px;
+			}
+    		width:25%;
+    		margin-bottom:30px;
+	    	display:block;
+	    	float:left;
+	    	padding-left:15px;
+	    	padding-right:15px;
+	    	&.first{
+	    		padding-left:0px;
+	    	}
+	    	&.last{
+	    		padding-right:0px;
+	    	}
+	    	header{
+	    		background: white;
+			    padding: 10px;
+			    margin-top: -7px;
+	    		&.entry-header{
+	    			h2{
+	    				font-size:15px;
+
+	    			}
+	    		}
+	    	}
+	    	.entry-content{
+	    		background:#fff;
+	    		padding:10px;
+	    		margin-top:0px !important;
+	    	}
+	    	a{
+	    		text-decoration:none;
+	    	}
+	    	
+	    }
+    }
+    
+}
+.flexslider{
+	border:0px !important;
+	margin-bottom:0px !important;
+	.flex-control-nav{
+		display:none;		
+	}
+	.flex-direction-nav{
+		a{
+			background:#000;
+			border-radius:50%;
+			text-align:center;
+			&:before{
+				color:#fff !important;
+				font-size:24px !important;
+				padding-top:3px;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.content-aboutus{
+	width:100%;
+	padding:10px;
+	margin-bottom:30px;
+	background:#fff;
+	@media screen and (max-width: 37.5em) {
+		text-align:justify;
+	}
+	h1{
+		margin-top: 0px;
+    	font-size: 18px;
+	}
+}
+#primary{
+	width:75%;
+	float:left;
+	@media screen and (max-width: 37.5em) {
+		width:100%;
+	}
+}
+.content-area {
+	float: left;
+	margin: 0 (-$size__site-sidebar) 0 0;
+	width: $size__site-main;
+}
+
+.site-main {
+	margin: 0 $size__site-sidebar 0 0;
+}
+#secondary{
+	width:25%;
+	float:right;
+	@media screen and (max-width: 37.5em) {
+		width:100%;
+	}
+}
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: $size__site-sidebar;
+}
+
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+}

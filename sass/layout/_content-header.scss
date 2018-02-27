@@ -1,0 +1,26 @@
+.site-header{
+	background:#fff;
+	padding:10px 0px;
+	@media screen and (max-width: 37.5em) {
+		padding-bottom:0px;
+		margin-bottom:10px;
+	}
+	.container{
+		@media screen and (max-width: 37.5em) {		
+			width:100%;
+		}
+	}
+}
+.site-branding{
+	width:25%;
+	float:left;
+	@media screen and (max-width: 37.5em) {
+		padding-left:10px;
+	}
+	.site-title,
+	.site-description{
+		@media screen and (min-width: 37.5em) {
+			display:none;
+		}
+	}
+}
