@@ -858,8 +858,9 @@ a:active {
 }
 
 #primary {
-  width: 75%;
-  float: left;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
 }
 
 @media screen and (max-width: 37.5em) {
@@ -868,14 +869,14 @@ a:active {
   }
 }
 
+#primary .entry-header h1 {
+  font-size: 22px;
+}
+
 .content-area {
   float: left;
   margin: 0 -25% 0 0;
   width: 100%;
-}
-
-.site-main {
-  margin: 0 25% 0 0;
 }
 
 #secondary {
@@ -898,6 +899,15 @@ a:active {
 .site-footer {
   clear: both;
   width: 100%;
+}
+
+#relatedpost {
+  width: 100%;
+}
+
+#relatedpost article {
+  width: 50%;
+  float: left;
 }
 
 /*--------------------------------------------------------------

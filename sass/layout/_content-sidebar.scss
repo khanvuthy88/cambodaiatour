@@ -12,10 +12,18 @@
 	}
 }
 #primary{
-	width:75%;
-	float:left;
+	//width:75%;
+	width:100%;
+	//float:left;
+	background:#fff;
+	padding:10px;
 	@media screen and (max-width: 37.5em) {
 		width:100%;
+	}
+	.entry-header{
+		h1{
+			font-size:22px;
+		}
 	}
 }
 .content-area {
@@ -25,7 +33,7 @@
 }
 
 .site-main {
-	margin: 0 $size__site-sidebar 0 0;
+	//margin: 0 $size__site-sidebar 0 0;
 }
 #secondary{
 	width:25%;
@@ -43,4 +51,11 @@
 .site-footer {
 	clear: both;
 	width: $size__site-main;
+}
+#relatedpost{
+	width:100%;
+	article{
+		width:50%;
+		float:left;
+	}
 }

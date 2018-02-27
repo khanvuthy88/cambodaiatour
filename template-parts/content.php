@@ -9,25 +9,18 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>">	
-
-	<?php cambodia_tour_guide_post_thumbnail(); ?>
+<article id="post-<?php the_ID(); ?>">
+	<?php if (is_singular()): ?>
+		
+	<?php else: ?>
+		<?php cambodia_tour_guide_post_thumbnail(); ?>
+	<?php endif; ?>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-				cambodia_tour_guide_posted_on();
-				cambodia_tour_guide_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
